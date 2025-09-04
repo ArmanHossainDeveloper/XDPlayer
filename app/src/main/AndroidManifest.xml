@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="media.xdplayer">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/><!--
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>-->
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".XDPlayerActivity"
+            android:label="XDPlayer"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|navigation"
+            android:screenOrientation="landscape"
+            android:exported="true">
+
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+
+            <intent-filter>
+                <data android:mimeType="text/plain"/>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:host="*"/>
+                <data android:mimeType="video/mp4"/>
+                <data android:mimeType="audio/*"/>
+            </intent-filter>
+
+
+        </activity>
+
+        <activity android:name=".WebmPlayerActivity"
+            android:label="Webm Player"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|navigation"
+            android:exported="true">
+
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+
+            <intent-filter>
+                <data android:mimeType="text/plain"/>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:host="*"/>
+                <data android:mimeType="video/webm"/>
+            </intent-filter>
+
+        </activity>
+
+        <!--
+                <activity android:name=".MainActivity"
+                    android:configChanges="orientation|screenSize|keyboard|keyboardHidden|navigation"
+                    android:screenOrientation="sensorLandscape"
+               android:exported="true">
+                    <intent-filter>
+                        <data android:mimeType="text/plain"/>
+                        <action android:name="android.intent.action.SEND" />
+                        <category android:name="android.intent.category.DEFAULT" />
+                    </intent-filter>
+
+                    <intent-filter
+                        android:label="Media Player">
+                        <action android:name="android.intent.action.VIEW"/>
+                        <category android:name="android.intent.category.DEFAULT" />
+
+                        <data android:scheme="file"/>
+                        <data android:scheme="content"/>
+                        <data android:host="*"/>
+                        <data android:mimeType="video/mp4"/>
+                        <data android:mimeType="audio/*"/>
+                    </intent-filter>
+
+            <intent-filter
+                android:label="Test Player">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:host="*"/>
+                <data android:mimeType="text/html"/>
+            </intent-filter>
+
+            <intent-filter android:label="The Viewer">
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="file"/>
+                <data android:host="*"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+
+
+        </activity>-->
+<!--
+        <activity android:name=".TempActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|navigation"
+            android:screenOrientation="sensorLandscape"
+            android:exported="true">
+
+            <intent-filter>
+                <data android:mimeType="text/plain"/>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>-->
+<!--
+        <receiver android:name="media.player.MainActivity$MediaButton"
+            android:exported="true">
+            <intent-filter android:priority="10000">
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>-->
+
+    </application>
+
+</manifest>

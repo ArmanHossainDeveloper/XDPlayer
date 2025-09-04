@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <WebView
+        android:id="@+id/web_view"
+        android:forceHasOverlappingRendering="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="backPressed"/>
+
+    <LinearLayout
+        android:id="@+id/popup_menu"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/menuBtn"
+            android:text="Back"
+            android:onClick="hideMenu"/>
+
+        <TextView
+            style="@style/menuBtn"
+            android:text="Retry"
+            android:onClick="retry"/>
+
+        <TextView
+            style="@style/menuBtn"
+            android:text="Reload"
+            android:onClick="reload"/>
+
+        <TextView
+            style="@style/menuBtn"
+            android:text="Rotate"
+            android:onClick="toggleRotation"/>
+
+        <TextView
+            style="@style/menuBtn"
+            android:text="Cancel"
+            android:onClick="cancelDownloads"/>
+
+        <TextView
+            android:id="@+id/exit"
+            style="@style/menuBtn"
+            android:text="Background"
+            android:onClick="exit"/>
+<!--
+        <TextView
+            android:id="@+id/default_view"
+            style="@style/menuBtn"
+            android:text="Exit"
+            android:onClick="stopAndExit"/>-->
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:keepScreenOn="true"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+            <VideoView
+                android:id="@+id/video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/status_update_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50%"
+        android:textColor="#fff"
+        android:background="#000"
+        android:textSize="25dp"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:id="@+id/gesture_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/back_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
+
+    <View
+        android:id="@+id/rotate_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"/>
+
+    <View
+        android:id="@+id/freeze_layout_view"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"/>
+    <View
+        android:id="@+id/raito_view"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <LinearLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/current_progress_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1:35"
+            android:textColor="#fff"
+            android:background="#000"
+            android:layout_margin="1dp"
+            android:textSize="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"/>
+        <SeekBar
+            android:id="@+id/progress_seekbar"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:max="100"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/duration_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1:35"
+            android:textColor="#fff"
+            android:background="#000"
+            android:layout_margin="1dp"
+            android:textSize="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/volume_controller_layout"
+        android:layout_width="40dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <SeekBar
+            android:id="@+id/volume_seekbar"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:rotation="270"
+            android:max="15"/>
+
+    </LinearLayout>
+
+   <!-- <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+    </LinearLayout>-->
+
+</RelativeLayout>

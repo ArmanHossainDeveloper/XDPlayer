@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<WebView
+    android:id="@+id/the_viewer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+    <TextView
+        style="@style/btn"
+        android:onClick="exit"/>
+
+    <TextView
+        style="@style/btn"
+        android:layout_alignParentRight="true"
+        android:onClick="toggleRotation"/>
+
+    <TextView
+        style="@style/btn"
+        android:layout_width="100dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="reload"/>
+
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/button"
+                android:id="@+id/copy_tv"
+                android:onClick="copyLink"/>
+
+
+            <TextView
+                style="@style/button"
+                android:id="@+id/save_tv"
+                android:onClick="saveFavouriteVid"/>
+
+            <TextView
+                style="@style/button"
+                android:id="@+id/go_tv"
+                android:onClick="openYoutubeGo"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#f80"
+                >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#f80">
+
+            </LinearLayout>
+
+        </LinearLayout>-->
+
+
+</RelativeLayout>

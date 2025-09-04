@@ -1,0 +1,99 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MediaPlayerExtendedViewActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <net.protyposis.android.mediaplayer.VideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gesture_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/back_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
+
+    <View
+        android:id="@+id/rotate_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"/>
+
+    <View
+        android:id="@+id/freeze_layout_view"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"/>
+    <View
+        android:id="@+id/raito_view"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <include layout="@layout/video_controller" />
+
+
+    <LinearLayout
+        android:id="@+id/volume_controller_layout"
+        android:layout_width="40dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <SeekBar
+            android:id="@+id/volume_seekbar"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:rotation="270"
+            android:max="15"/>
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

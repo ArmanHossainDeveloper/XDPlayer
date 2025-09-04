@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">XDPlayer</string>
+<string name="title_activity_videoview">VideoView (Android API) Demo</string>
+    <string name="title_activity_mediaplayer">MediaPlayer (Android API) Demo</string>
+    <string name="title_activity_mediaplayerextended">MediaPlayer-Extended Demo</string>
+    <string name="title_activity_exoplayer">ExoPlayer Demo</string>
+    <string name="title_activity_camera">Camera Demo</string>
+    <string name="title_activity_image">Image Demo</string>
+    <string name="toggle_parameters">Parameters</string>
+    <string name="save_frame">Save Frame</string>
+    <string name="switch_camera">Switch Camera</string>
+    <string name="effects">Effects</string>
+    <string name="parameter_reset_short">RST</string>
+    <string name="description_headline">Welcome to the Spectaculum Library Showcase!</string>
+    <string name="description_text">This technical demo shows key features and usage examples of the library in a very simple app and serves as a reference on how to use the components in Java code. This app is not intended to be used as a picture viewer or video player application by end users. The library is available at the following link:</string>
+    <string name="library_url">https://github.com/protyposis/Spectaculum</string>
+    <string name="uri_missing">no file selected</string>
+    <string name="feature_videoview">Android API: VideoView</string>
+    <string name="feature_mediaplayer">Android API: MediaPlayer</string>
+    <string name="feature_mediaplayerextended">MediaPlayer-Extended</string>
+    <string name="feature_exoplayer">ExoPlayer</string>
+    <string name="feature_camera">Camera</string>
+    <string name="copyright_notice">Copyright © 2014–2024 Mario Guggenberger. Released under the Apache 2.0 license. http://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="open_source_licenses">Open Source Licenses</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy_policy_url">https://protyposis.net/android-privacy-policy/</string>
+    <string name="action_halfspeed">0.5x Speed</string>
+    <string name="action_doublespeed">2.0x Speed</string>
+    <string name="action_quadspeed">4.0x Speed</string>
+    <string name="action_normalspeed">1.0x Speed</string>
+    <string name="action_slowspeed">0.2x Speed</string>
+    <string name="openvideo_description">Open a video file from any app (e.g. the web browser), or select one of these options:</string>
+    <string name="openvideo_pick">Pick a file</string>
+    <string name="openvideo_type">Paste or type URL</string>
+    <string name="feature_imageview">Image</string>
+
+</resources>
